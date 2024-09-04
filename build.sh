@@ -39,11 +39,11 @@ if [[ $1 = "-t" || $1 = "--tools" ]]; then
 fi
 
 # Regenerate defconfig file
-if [[ $1 = "-r" || $1 = "--regen" ]]; then
-	make O=out ARCH=arm64 $DEFCONFIG savedefconfig
-	cp out/defconfig arch/arm64/configs/$DEFCONFIG
-	echo -e "\nSuccessfully regenerated defconfig at $DEFCONFIG"
-fi
+#if [[ $1 = "-r" || $1 = "--regen" ]]; then
+#	make O=out ARCH=arm64 $DEFCONFIG savedefconfig
+#	cp out/defconfig arch/arm64/configs/$DEFCONFIG
+#	echo -e "\nSuccessfully regenerated defconfig at $DEFCONFIG"
+#fi
 
 if [[ $1 = "-b" || $1 = "--build" ]]; then
 	export ARCH=arm64
